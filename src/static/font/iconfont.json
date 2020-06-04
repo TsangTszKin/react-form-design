@@ -1,0 +1,100 @@
+{
+  "id": "1268923",
+  "name": "动态表单设计",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7192357",
+      "name": "复制",
+      "font_class": "fuzhi",
+      "unicode": "e720",
+      "unicode_decimal": 59168
+    },
+    {
+      "icon_id": "10292039",
+      "name": "删 除",
+      "font_class": "shanchu",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "637485",
+      "name": "单选框",
+      "font_class": "danxuankuang",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "695127",
+      "name": "标题",
+      "font_class": "biaoti",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "998821",
+      "name": "布局",
+      "font_class": "ai211",
+      "unicode": "e6c7",
+      "unicode_decimal": 59079
+    },
+    {
+      "icon_id": "1120965",
+      "name": "多选框",
+      "font_class": "duoxuankuang1",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "1766503",
+      "name": "符号-图片上传",
+      "font_class": "tupianshangchuan",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "1790454",
+      "name": "多行文本",
+      "font_class": "duohangwenben",
+      "unicode": "e6e7",
+      "unicode_decimal": 59111
+    },
+    {
+      "icon_id": "2471367",
+      "name": "开关",
+      "font_class": "kaiguan",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "4251758",
+      "name": "时间选择器",
+      "font_class": "shijianxuanzeqi",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "5881136",
+      "name": "单行文本",
+      "font_class": "danhangwenben",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "7367534",
+      "name": "下拉选择",
+      "font_class": "xialaxuanze",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "7855698",
+      "name": "计数标签",
+      "font_class": "jishubiaoqian",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    }
+  ]
+}

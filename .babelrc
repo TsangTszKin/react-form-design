@@ -1,0 +1,25 @@
+{
+    "presets": [
+      "es2015",
+      "react",
+      [
+        "env",
+        {
+          "modules": false,
+          "useBuiltIns": false,
+          "uglify": true,
+          "targets": {
+            "browsers": ["last 2 versions"]
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "transform-decorators-legacy",
+      "transform-class-properties",
+      "syntax-dynamic-import",
+      ["transform-runtime",{"polyfill": false}],
+      ["transform-object-rest-spread",{"useBuiltIns": true}],
+      ["import", { "libraryName": "antd", "style": true }]
+    ]
+  }
