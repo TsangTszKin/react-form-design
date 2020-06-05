@@ -68,7 +68,7 @@ class Preview extends Component {
                                             return <Checkbox.Group options={el.options.options} size={config.size} defaultValue={defaultValue} />
                                         case 'select':
                                             return (
-                                                <Select style={{ width: el.options.width }} size={config.size} placeholder={placeholder} defaultValue={common.isEmpty(defaultValue) ? undefined : defaultValue}>
+                                                <Select style={{ width: el.options.width, minWidth: '180px' }} size={config.size} placeholder={placeholder} defaultValue={common.isEmpty(defaultValue) ? undefined : defaultValue}>
                                                     {
                                                         el.options.options.map((el2, j) =>
                                                             <Select.Option value={el2.value} key={j}>{el2.label}</Select.Option>

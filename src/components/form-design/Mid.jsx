@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-01 11:41:44
- * @LastEditTime: 2020-06-04 15:45:03
+ * @LastEditTime: 2020-06-05 10:16:32
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \react-form-design\src\container\column.js
@@ -10,7 +10,7 @@
 import React, { Component } from 'react'
 import FormItem from './FormItem'
 import { Droppable } from 'react-beautiful-dnd'
-import { Form, Modal } from 'antd'
+import { Form, Modal, Switch, Radio } from 'antd'
 import { inject, observer } from 'mobx-react';
 import common from '@/utils/common'
 import Preview from './Preview'
@@ -49,19 +49,25 @@ class Mid extends Component {
     render() {
         const config = this.props.store.config.get
         const content = this.props.store.content.get
+        const mode = this.props.store.mode.get
         return (
             <div className="mid" style={{ width: 'calc(100% - 416px)' }}>
-                <h3 className="title">
-                    {
-                        common.isEmpty(content) ? '' :
-                            <a style={{ float: 'left' }} onClick={() => this.setState({ visible: true })} >点击预览</a>
-                    }
-                表单内容
-                </h3>
+                <h3 className="title">表单内容</h3>
+                <p style={{ width: '100%' }}> {
+                    common.isEmpty(content) ? '' :
+                        <a style={{ float: 'left' }} onClick={() => this.setState({ visible: true })} >点击预览</a>
+                }
+                    <Radio.Group style={{ float: 'right' }} onChange={e => {
+                        this.props.store.mode.set(e.target.value)
+                    }} value={mode}>
+                        <Radio value='pc'>PC模式</Radio>
+                        <Radio value='phone'>手机模式</Radio>
+                    </Radio.Group>
+                </p>
                 <Droppable droppableId={'content'} >
                     {(provided, snapshot) => {
                         return (
-                            <div className="shell"
+                            <div className={mode === 'pc' ? 'shell' : 'shell_phone'}
                                 ref={provided.innerRef}
                                 {...provided.droppableProps}
                                 isDraggingOver={snapshot.isDraggingOver}

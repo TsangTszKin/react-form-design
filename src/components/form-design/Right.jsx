@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-01 11:41:44
- * @LastEditTime: 2020-06-04 16:00:22
+ * @LastEditTime: 2020-06-05 10:08:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \react-form-design\src\container\column.js

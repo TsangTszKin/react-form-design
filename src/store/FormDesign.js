@@ -2,7 +2,7 @@
  * @Author: zengzijian
  * @Date: 2019-08-26 14:17:20
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-06-03 16:53:29
+ * @LastEditTime: 2020-06-05 10:05:28
  * @Description: 
  */
 import { observable, toJS } from 'mobx'
@@ -11,7 +11,7 @@ class store {
 
     @observable config = {
         data: {
-            layout: 'vertical',
+            layout: 'inline',
             labelAlign: 'left',
             size: 'default',
         },
@@ -38,6 +38,16 @@ class store {
 
     @observable activeId = {
         value: '',
+        get get() {
+            return toJS(this.value)
+        },
+        set(value) {
+            this.value = value
+        }
+    }
+
+    @observable mode = {
+        value: 'phone',
         get get() {
             return toJS(this.value)
         },

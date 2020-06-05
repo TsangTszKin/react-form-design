@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-01 17:36:39
- * @LastEditTime: 2020-06-04 15:57:20
+ * @LastEditTime: 2020-06-05 09:54:12
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \react-form-design\src\container\FormItem.js
@@ -157,7 +157,7 @@ class FormItem extends Component {
                                                             },
                                                         ],
                                                     })(
-                                                        <Select style={{ width: data.options.width }} size={this.props.size} placeholder={placeholder} value={common.isEmpty(defaultValue) ? undefined : defaultValue}>
+                                                        <Select style={{ width: data.options.width, minWidth: '180px' }} size={this.props.size} placeholder={placeholder} value={common.isEmpty(defaultValue) ? undefined : defaultValue}>
                                                             {
                                                                 data.options.options.map((el, i) =>
                                                                     <Select.Option value={el.value} key={i}>{el.label}</Select.Option>
@@ -226,7 +226,7 @@ class FormItem extends Component {
                                 ></span>
                                 <span className="iconfont icon-shanchu" title="删除" style={{ fontSize: '20px', cursor: 'pointer' }}
                                     onClick={() => {
-                                        if (content.length > 0) {
+                                        if (content.length > 1) {
                                             this.props.store.activeId.set(content[this.props.index - 1].id)
                                         }
                                         content.splice(this.props.index, 1)
