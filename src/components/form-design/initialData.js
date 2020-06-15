@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-01 11:43:08
- * @LastEditTime: 2020-06-15 10:13:22
+ * @LastEditTime: 2020-06-15 11:11:54
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \react-form-design\src\container\todoData.js
@@ -100,8 +100,7 @@ const initialData = {
                         color: '#666666',
                         textAlign: 'left',
                         fontWeight: 'normal'
-                    },
-                    code:''
+                    }
                 }
             ]
         }
