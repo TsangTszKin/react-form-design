@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-01 11:43:08
- * @LastEditTime: 2020-06-04 11:08:47
+ * @LastEditTime: 2020-06-15 10:13:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \react-form-design\src\container\todoData.js
@@ -91,6 +91,15 @@ const initialData = {
                         defaultValue: '',
                         required: false,
                         disabled: false
+                    },
+                    code:''
+                },
+                {
+                    id: 'seed-8', label: '标题', type: 'title', icon: 'icon-biaoti', options: {
+                        fontSize: '16px',
+                        color: '#666666',
+                        textAlign: 'left',
+                        fontWeight: 'normal'
                     },
                     code:''
                 }

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-01 17:36:39
- * @LastEditTime: 2020-06-05 09:54:12
+ * @LastEditTime: 2020-06-15 11:00:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \react-form-design\src\container\FormItem.js
@@ -206,6 +206,12 @@ class FormItem extends Component {
                                                 </Form.Item>
                                             </div>
                                         )
+                                    case 'title':
+                                        return (
+                                            <div className="form-item">
+                                                <p style={{fontSize: data.options.fontSize, color: data.options.color, textAlign: data.options.textAlign, fontWeight: data.options.fontWeight}}>{data.label}</p>
+                                            </div>
+                                        )
                                     default:
                                         break;
                                 }
@@ -213,7 +219,7 @@ class FormItem extends Component {
                         }
                         {
                             isActive && <div style={{ position: 'absolute', right: '0', bottom: '0' }}>
-                                <span className="iconfont icon-fuzhi" title="赋值" style={{ fontSize: '20px', cursor: 'pointer', marginRight: '5px' }}
+                                <span className="iconfont icon-fuzhi" title="复制" style={{ fontSize: '20px', cursor: 'pointer', marginRight: '5px' }}
                                     onClick={() => {
                                         let newFormItem = common.deepClone(data)
                                         newFormItem.id = `content-${this.getKey()}---${content.length}`

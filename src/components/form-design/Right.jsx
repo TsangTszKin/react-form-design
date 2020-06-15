@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-01 11:41:44
- * @LastEditTime: 2020-06-05 10:08:25
+ * @LastEditTime: 2020-06-15 10:47:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \react-form-design\src\container\column.js
@@ -10,7 +10,7 @@
 import React, { Component } from 'react'
 import { Tabs, Radio } from 'antd'
 import PropTypes from 'prop-types'
-import { FDInput, FDTextArea, FDRadio, FDCheckbox, FDSelect, FDSwitch, FDDate } from '@/components/form-design/config/Index'
+import { FDInput, FDTextArea, FDRadio, FDCheckbox, FDSelect, FDSwitch, FDDate, FDTitle } from '@/components/form-design/config/Index'
 import common from '@/utils/common'
 import { inject, observer } from 'mobx-react';
 
@@ -65,6 +65,8 @@ class Right extends Component {
                                             return <FDSwitch item={target} callback={this.updateItem} />
                                         case 'date':
                                             return <FDDate item={target} callback={this.updateItem} />
+                                        case 'title':
+                                            return <FDTitle item={target} callback={this.updateItem} />
                                         default:
                                             break;
                                     }

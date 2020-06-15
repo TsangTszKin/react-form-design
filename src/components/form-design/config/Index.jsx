@@ -5,5 +5,6 @@ import FDCheckbox from "./FDCheckbox";
 import FDSelect from "./FDSelect";
 import FDSwitch from "./FDSwitch";
 import FDDate from "./FDDate";
+import FDTitle from "./FDTitle";
 
-export { FDInput, FDTextArea, FDRadio, FDCheckbox, FDSelect, FDSwitch, FDDate }
+export { FDInput, FDTextArea, FDRadio, FDCheckbox, FDSelect, FDSwitch, FDDate, FDTitle }
